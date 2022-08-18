@@ -9,7 +9,7 @@ class ExampleTest extends TestCase {
 
 	public function test_example(
 	) {
-
+		$this->markTestSkipped("Example");
 		$this->assertEquals(4, 4);
 	}
 
