@@ -11,7 +11,7 @@ class Player {
         return $this->figure;
     }
 
-    public function chose(string $figure)
+    public function choose(string $figure)
     {
         if ($figure == "Rock") {
             $this->figure = new Rock;
@@ -19,6 +19,10 @@ class Player {
 
         if ($figure == "Scissors") {
             $this->figure = new Scissors;
+        }
+
+        if ($figure == "paper") {
+            $this -> figure = new paper;
         }
 
     }
